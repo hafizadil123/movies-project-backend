@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && babel app -d build",
     "clean": "rm -rf build && mkdir build",
-    "start": "nodemon",
+    "start": "node index.js",
     "deploy": "npm run build && NODE_ENV=production node index.js",
     "test": "NODE_ENV=test mocha --recursive --reporter spec --compilers js:babel-register tests",
     "lint": "eslint app",
